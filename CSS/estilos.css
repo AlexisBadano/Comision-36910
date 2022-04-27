@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    /* background-color: rgb(23, 23, 23); Dark mode? */
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.iconoHeader{
+    display: none;
+}
+
+.logo img{
+    border-radius: 3rem;
+}
+
+.slogan{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+.slogan p{
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.menuNavegacion{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+
+}
+
+.listaNavegacion li {
+    display: inline;
+    padding: 2rem;
+}
+
+.botonNavegacion a {
+    color: rgb(228, 119, 17);
+    text-decoration: none;
+}
+
+.botonNavegacionAtras a {
+    display: none;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(228, 119, 17);
+    text-decoration: none;
+}
+
+.busqueda{
+    margin-right: 2rem;
+    
+}
+
+.productoDestacado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas: 
+        "subtitulo subtitulo"
+        "texto video"
+    ;
+
+    line-height: 2rem;
+    border: solid rgb(228, 119, 17);
+    background-color: #afafaf;
+    border-radius: 1rem;
+    margin: 3rem 5rem 3rem 5rem;
+}
+
+.banner{
+    margin-top: 0.5rem;
+    height: 150px;
+    background-image: url(/images/productos-destacados-banner.jpg);
+}
+
+.titulo{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-end;
+    color: orange;
+}
+
+.subtitulo{
+    grid-area: subtitulo;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    /* color: rgb(238, 150, 68) ; */
+}
+
+.descripcionProducto{
+    text-align: justify;
+    grid-area: texto;
+    padding: 1rem 3rem;
+}
+
+.video{
+    padding: 1rem 3rem;
+    grid-area: video;
+}
+
+.video iframe{
+    height: 315px;
+    width: 100%;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* border-top: solid orangered; */
+}
+
+.textoCopyright{
+    display: flex;
+    align-items: flex-end;
+    font-size: smaller;
+}
+
+.descripcionEmpresa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 2rem;
+}
+
+.descripcionEmpresa p{
+    padding: 2rem 0rem;
+}
+
+.descripcionEmpresa img{
+    padding-left: 1rem;
+}
+
+.imagenTrabajos{
+    width: 400px;
+    height: 250px;
+}
+
+.productos{
+    display: flex;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.tablaProductos td{
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+
+.formularioContacto{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(228, 119, 17);    
+    padding: 1rem;
+    margin: 3rem;
+
+    grid-area: formulario;
+}
+
+.mapa{
+    margin: 3rem;
+
+    grid-area: mapa;
+}
+
+.cuerpoContacto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq{
+    margin: 3rem;
+}
+
+.faqTitulo{
+    padding: 1rem;
+}
+
+.faq p{
+    padding: 1rem;
+}
+
+.menuBars{
+    display: none;
+}
+
+@media screen and (max-width:1024px){
+    
+    
+
+    .menuNavegacion{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .listaNavegacion{
+        width: 100%;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .listaNavegacion li{
+        padding: 0rem;
+    }
+
+    .busqueda{
+        display: none;
+    }
+
+    .productoDestacado{
+        max-height: 1000px;
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-areas: "subtitulo" "texto" "video" ;
+    }
+
+    .descripcionProducto{
+        padding: 1rem 2rem;
+    }
+
+    .video{
+        padding: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        /* border-top: solid orangered; */
+    }
+
+    /* Contactanos Tablet View */
+
+    .cuerpoContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr ;
+        grid-template-areas: "formulario mapa";
+    }
+
+    .formularioContacto{
+        border-radius: 1rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .mapa{
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
+    .mapa h2{
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Empresa Tablet View */
+
+    .descripcionEmpresa{
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width:450px){
+    
+    .menuNavegacion{
+        display: none;
+    }
+
+    .slogan{
+        align-items: center;
+        width: 65%;
+    }
+
+    .menuBars{
+        width: 20%;
+        text-decoration: none;
+        color: orange;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .iconoHeader{
+        display: block;
+    }
+
+    #sidebar{
+        background-color: rgb(224, 221, 221);
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 60%;
+        max-width: 300px;
+
+        transform: translateX(-100%);
+        
+    }
+
+    #sidebar .listaNavegacion{
+        height: 50% ;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    #sidebar:target{
+        display: block;
+        transform: translateX(0);
+    }
+
+    .botonNavegacionAtras a{
+        display: block;
+    }
+
+    .subtitulo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0rem;
+    }
+
+    .productoDestacado{
+        /* max-height: 1000px; */
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-areas: "subtitulo" "texto" "video" ;
+    }
+
+    .descripcionProducto{
+        padding: 1rem 2rem;
+    }
+
+    .video{
+        padding: 0.5rem;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        /* border-top: solid orangered; */
+    }
+
+    /* Contactanos */
+
+    .cuerpoContacto{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "formulario" "mapa";
+    }
+
+    .formularioContacto{
+        margin: 0.5rem;
+        width: 95%;
+    }
+
+    .mapa{
+        margin: 1rem;
+    }
+    .mapa iframe{
+        width: 100%;
+    }
+
+    /* Productos */
+
+    .beneficio{
+        display: none;
+    }
+
+    .beneficioLista{
+        display: none;
+    }
+}   
+
