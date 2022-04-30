@@ -46,6 +46,11 @@ header{
     z-index: 10000;
 }
 
+/* Bootstrap agrega un margin-bottom 1rem a todas las p, dl, ul y ol en un archivo que se llama reboot.scss */
+.listaNavegacion{
+    margin-bottom: 0rem;
+}
+
 
 .listaNavegacion li {
     display: inline;
