@@ -43,7 +43,9 @@ header{
     align-items: center;
     width: 80%;
 
+    z-index: 10000;
 }
+
 
 .listaNavegacion li {
     display: inline;
@@ -225,10 +227,32 @@ footer{
     font-size: 4rem;
 }
 
+.img_retiro{
+    display: flex;
+    justify-content: center;
+}
+
+.icono_retiro{
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+.img_pagos{
+    display: flex;
+    justify-content: center;
+}
+
+.icono_pagos{
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+
 /* End of FAQ Section */
 
 .menuBars{
     display: none;
+    
 }
 
 
@@ -247,6 +271,7 @@ footer{
         width: 100%;
         padding: 0.5rem;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
 
@@ -336,6 +361,7 @@ footer{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
     }
 
     .iconoHeader{
