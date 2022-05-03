@@ -198,7 +198,7 @@ footer{
     justify-content: justify;
 }
 
-.tablaProductos{
+.articulos{
     background: rgb(91,91,91);
     background: linear-gradient(28deg, rgba(91,91,91,1) 8%, rgba(175,173,173,1) 19%, rgba(141,141,141,1) 33%, rgba(222,222,222,1) 50%, rgba(213,208,208,1) 64%, rgba(253,247,247,1) 79%, rgba(114,114,114,1) 100%);
 }
@@ -231,6 +231,8 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "formulario mapa";
     justify-items: center;
+
+    overflow: hidden;
 }
 
 /* FAQ'S Section */
@@ -329,9 +331,9 @@ footer{
 
     .cuerpoContacto{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr ;
-        grid-template-areas: "formulario mapa";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-template-areas: "formulario" "mapa";
         /* justify-content: center; */
     }
 
@@ -339,16 +341,23 @@ footer{
         border-radius: 1rem;
         margin: 0.5rem;
         padding: 0.5rem;
-        width: 100%;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .donde_estamos{
+        position: absolute;
     }
 
     .mapa{
+        display: flex;
+        justify-content: center;
         margin: 1rem;
         width: 100%;
     }
 
     .mapa iframe{
-        width: 100%;
+        width: 50%;
     }
 
     .mapa h2{
