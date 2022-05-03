@@ -142,16 +142,27 @@ footer{
     font-size: smaller;
 }
 
+/* Seccion Empresa */
+
+.img_carousel{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+    width: 40%;
+}
+
 .descripcionEmpresa{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 3rem 2rem;
+    margin: 2rem 2rem;
 }
-
+/* 
 .descripcionEmpresa p{
     padding: 2rem 0rem;
-}
+} */
 
 .descripcionEmpresa img{
     padding-left: 1rem;
@@ -349,6 +360,12 @@ footer{
         display: flex;
 
     }
+
+    .carousel{
+        width: 50%;
+    }
+
+    /* Empresa Tablet End */
 }
 
 @media screen and (max-width:450px){
@@ -435,6 +452,17 @@ footer{
         justify-content: space-around;
         /* border-top: solid orangered; */
     }
+
+
+    /* Empresa Start */
+
+    .carousel{
+        width: 90%;
+    }
+
+    /* Empresa End */
+
+
 
     /* Contactanos */
 
