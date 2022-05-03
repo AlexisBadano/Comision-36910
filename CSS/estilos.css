@@ -178,10 +178,24 @@ footer{
     height: 250px;
 }
 
+/* Productos Start */
+
+.tabla_productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
 .productos{
     display: flex;
     justify-content: center;
     margin: 1.5rem;
+}
+
+.lista_productos li{
+    font-size: 1.25em;
+    display: flex;
+    justify-content: justify;
 }
 
 .tablaProductos{
@@ -193,6 +207,8 @@ footer{
     text-align: justify;
     padding: 1rem 2rem;
 }
+
+/* Contactanos Start */
 
 .formularioContacto{
     display: flex;
@@ -218,20 +234,6 @@ footer{
 }
 
 /* FAQ'S Section */
-
-/* 
-.faq{
-    margin: 3rem;
-}
-
-.faqTitulo{
-    padding: 1rem;
-}
-
-.faq p{
-    padding: 1rem;
-}
-*/
 
 .img_cuenta{
     display: flex;
@@ -429,6 +431,13 @@ footer{
         padding-left: 0rem;
     }
 
+    /* Productos Start */
+
+    .productos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .productoDestacado{
         /* max-height: 1000px; */
         margin: 0.5rem;
