@@ -1,0 +1,19 @@
+{
+  "name": "ryzer-gmng",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass style.scss ./css/style.css -w --no-source-map -s compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisBadano/Comision-36910.git"
+  },
+  "author": "Alexis Badano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisBadano/Comision-36910/issues"
+  },
+  "homepage": "https://github.com/AlexisBadano/Comision-36910#readme"
+}
