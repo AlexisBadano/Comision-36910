@@ -41,7 +41,7 @@ header{
 
     &__boton{
         display: inline;
-        padding: 2rem;
+        padding: 0.4rem 0.8rem;
     }
 
     &__boton a {
@@ -57,6 +57,17 @@ header{
         color: rgb(228, 119, 17);
         text-decoration: none;
     }
+}
+
+.navegacion__boton a:hover{
+    transition: all 0.3s ease-in;
+    font-weight: 700;
+}
+
+.navegacion__boton:hover{
+    border-radius: 50px;
+    background-color: rgb(224, 221, 221);
+    transition: background-color 0.3s ease-in;
 }
 
 .busqueda{

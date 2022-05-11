@@ -180,10 +180,16 @@ footer{
 
 /* Productos Start */
 
-.tabla_productos{
+.tabla__productos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+.tabla__productos img{
+    padding: 0.25em;
+    height: 200px;
+    object-fit: contain;
 }
 
 .productos{

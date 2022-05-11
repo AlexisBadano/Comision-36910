@@ -55,3 +55,48 @@
 }
 
 
+// Responsive for Tablet
+
+
+@media screen and (max-width:1024px){
+    .producto__destacado{
+        max-height: 1000px;
+        margin: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 1fr 1fr;
+        grid-template-areas: "subtitulo" "texto" "video" ;
+
+
+        &--descripcion{
+            padding: 1rem 2rem;
+        }
+
+
+        &--video{
+            padding: 0.5rem;
+        }
+    }
+}
+
+// Responsive for Mobile
+
+@media screen and (max-width:450px){
+
+    .producto__destacado{
+        height: 70vh;
+
+        &--descripcion{
+            padding: 1rem;
+            line-height: 1.7rem;
+            overflow: scroll;
+        }
+    }
+
+
+    .producto__destacado--subtitulo{
+        display: flex;
+        justify-content: center;
+        padding-left: 0rem;
+    }
+}
