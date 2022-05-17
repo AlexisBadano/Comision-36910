@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+
+    .redes{
+        display: flex;
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__texto{
+        margin: 0;
+
+    }
+}

@@ -1,7 +1,11 @@
+@import './components/Utilities/variables';
+
+@import './components/global';
+
 @import './components/header';
+
 @import './components/index';
 
-body{
-    font-family: 'Inter', sans-serif;
-    /* background-color: rgb(23, 23, 23); Dark mode? */
-}
+@import './components/contactanos';
+
+@import './components/footer';

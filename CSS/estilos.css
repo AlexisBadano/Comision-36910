@@ -94,7 +94,7 @@ header{
 .banner{
     margin-top: 0.5rem;
     height: 150px;
-    background-image: url(/images/productos-destacados-banner.jpg);
+    background-image: url(../images/productos-destacados-banner.jpg);
 }
 
 .titulo{
@@ -192,11 +192,9 @@ footer{
     object-fit: contain;
 }
 
-.productos{
-    display: flex;
-    justify-content: center;
-    margin: 1.5rem;
-}
+/* #caja_producto{
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.4);
+} */
 
 .lista_productos li{
     font-size: 1.25em;

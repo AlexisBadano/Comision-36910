@@ -11,7 +11,7 @@
     border: solid rgb(228, 119, 17);
     background-color: #afafaf;
     border-radius: 1rem;
-    margin: 3rem 5rem 3rem 5rem;
+    margin: 3rem 5rem 0rem;
 
     &--subtitulo{
         grid-area: subtitulo;
@@ -42,18 +42,12 @@
 .banner{
     margin-top: 0.5rem;
     height: 150px;
-    background-image: url(/images/productos-destacados-banner.jpg);
+    background-image: url(../images/productos-destacados-banner.jpg);
 }
 
 .titulo{
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    display: flex;
-    align-items: flex-end;
-    color: orange;
+ @extend .template_titulos;
 }
-
 
 // Responsive for Tablet
 
