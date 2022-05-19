@@ -17,3 +17,12 @@ footer{
 
     }
 }
+
+@media screen and (max-width: 450px){
+    .redes{
+
+        p{
+        display:none;
+        }
+    }
+}
