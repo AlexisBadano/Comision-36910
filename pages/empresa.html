@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
     <!-- Hoja de Estilos Propios -->
-    <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="../CSS/style.css">
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/d01018b788.js" crossorigin="anonymous"></script>
@@ -20,77 +20,79 @@
     <title>Ryzer Gaming - Empresa</title>
 </head>
 <body>
-    <header>
-        <a class="logo" href="../index.html"><img src="../images/logo.jpg" alt="logo ryzer" width="75" height="75"></a>
+  <header>
+    <a class="logo" href="../index.html"><img src="../images/logo.jpg" alt="logo ryzer" width="75" height="75"></a>
 
-        <span class="slogan">
-            <p> Gaming taken to the next level </p>
-        </span>
+    <span class="slogan">
+        <p class="slogan__text"> Gaming taken to the next level </p>
+    </span>
+    
+    <a class="menu__bars" href="#sidebar">
+        <i class="icono__bars fas fa-bars"></i>
+    </a>
+    
+    <nav class="navegacion" id="sidebar">
+        <!-- Menu de navegacion -->
+        <ul class="navegacion__lista">
+            <li class="navegacion__boton"><a href="../index.html">Inicio</a></li>
+            <li class="navegacion__boton"><a href="./empresa.html">Empresa</a></li>
+            <li class="navegacion__boton"><a href="./productos.html">Productos</a></li>
+            <li class="navegacion__boton"><a href="./contactanos.html">Contactanos</a></li>
+            <li class="navegacion__boton"><a href="./Faq.html">Preguntas Frecuentes</a></li>
+            <li class="navegacion__boton navegacion__boton--atras"><a href="#">←</a></li>
+        </ul>
+    
+        <div class="busqueda">
+            <input class="" type="search" name="" id="" placeholder="Search">
+        </div>
+    
+    </nav>
+    
+  </header>     
 
-        <a class="menuBars" href="#sidebar">
-            <i class="iconoHeader fas fa-bars"></i>
-        </a>
-        
-        <nav class="menuNavegacion" id="sidebar">
-            <!-- Menu de navegacion -->
-            <ul class="listaNavegacion">
-                <li class="botonNavegacion"><a href="../index.html">Inicio</a></li>
-                <li class="botonNavegacion"><a href="./empresa.html">Empresa</a></li>
-                <li class="botonNavegacion"><a href="./productos.html">Productos</a></li>
-                <li class="botonNavegacion"><a href="./contactanos.html">Contactanos</a></li>
-                <li class="botonNavegacion"><a href="./Faq.html">Preguntas Frecuentes</a></li>
-                <li class="botonNavegacionAtras"><a href="#">←</a></li>
-            </ul>
-        
-            <div>
-                <input class="busqueda" type="search" name="" id="" placeholder="Search">
-            </div>
-            
-
-        </nav>
-        
-    </header>     
-
-    <main>
+  <main>
         <div class="banner">
             <h1 class="titulo">Sobre nosotros</h1>
         </div>
       
-        <div class="descripcionEmpresa">
-          <h2>Quienes somos</h2>
+        <div class="empresa">
+          <h2>¿Quienes somos?:</h2>
 
-          <p>Somos una empresa que inicio hace apenas unos meses, pero que debido a nuestra dedicación y profesionalismo ya se ha logrado insertar en el mercado como una de las mejores opciones. Nos dedicamos principalmente a brindar soluciones tecnologicas a medida para su negocio. Tambien realizamos armado de Servidores, Computadores de escritorio para uso hogareño y computadoras Gamer donde nuestros tecnicos, que están capacitados, los acompañaran y aconsejaran durante el proceso de seleccion de partes.
+          <p>Somos Ryzer, una empresa joven que entiende tus necesidades. Estamos para escucharte y orientarte para que realices la mejor compra con el fin de lograr tus objetivos. Cada cliente busca distintas funciones y componentes en sus ordenadores y nosotros entendemos esto.
+
+            Nos dedicamos principalmente a brindar soluciones tecnológicas a medida para su negocio. Debido a nuestra dedicación y profesionalismo nos hemos insertado en el mercado compitiendo con empresas de larga trayectoria a pesar de habernos fundado hace menos de un año. Entendemos a nuestros clientes y abarcamos todas las áreas, realizamos armado de Servidores, Computadoras de escritorio para uso hogareño y computadoras Gamer. Nuestros técnicos están capacitados y  lo acompañarán y aconsejarán durante el proceso de selección de partes para lograr los mejores resultados. También, para asegurar un buen uso y durabilidad a largo plazo, realizamos mantenimiento y limpieza de los equipos y  además brindamos capacitaciones para el correcto mantenimiento y posterior actualización de Hardware de los equipos que ya se poseen.
             
-          Realizamos mantenimiento y limpieza de los equipos, pero además brindamos capacitaciones para el correcto mantenimiento y posterior actualizacion de Hardware de los equipos que ya poseen. </p>
+            Nuestra misión es ser la empresa líder del mercado de tecnología de la Argentina. Creando soluciones a nuestros clientes, siendo reconocidos por nuestros competidores y valorados por nuestros proveedores.
+          </p>
         </div>
 
-        <div class="descripcionEmpresa">
-            <h2>Algunos de nuestros trabajos.</h2>
+        <div class="empresa">
+          <h2>Algunos de nuestros trabajos.</h2>
 
-            <p>Debajo podrán ver algunos de los Setups finalizados que fuimos realizando con el correr del tiempo. En los mismos se podrá observar el nivel de dedicación y detalle que se le presta al orden del cableado, la capacidad de refrigeración acorde al Hardware y al look en general del sistema para que todo cierre de forma armoniosa.
-            </p>
+          <p>Aquí pueden ver algunos de nuestros Setups, en los mismos se observa el nivel de dedicación y detalle que se le presta al orden del cableado, la capacidad de refrigeración acorde al Hardware y al diseño general del sistema para que todo se junte de forma armoniosa..
+          </p>
 
         </div>
        
         <!-- Carousel -->
         
-        <div class="img_carousel">
+        <div class="carousel__div">
          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="../images/empresa.jpg" class="d-block w-100" alt="imagenTrabajos">
+                <img class="carousel__div--imagen" src="../images/empresa.jpg" class="d-block w-100" alt="imagenTrabajos">
               </div>
               <div class="carousel-item">
-                <img src="../images/trabajos 2.jpg" class="d-block w-100" alt="imagenTrabajos">
+                <img class="carousel__div--imagen" src="../images/trabajos 2.jpg" class="d-block w-100" alt="imagenTrabajos">
               </div>
               <div class="carousel-item">
-                <img src="../images/trabajos 3.jpg" class="d-block w-100" alt="imagenTrabajos">
+                <img class="carousel__div--imagen" src="../images/trabajos 3.jpg" class="d-block w-100" alt="imagenTrabajos">
               </div>
               <div class="carousel-item">
-                <img src="../images/trabajos 4.jpg" class="d-block w-100" alt="imagenTrabajos">
+                <img class="carousel__div--imagen" src="../images/trabajos 4.jpg" class="d-block w-100" alt="imagenTrabajos">
               </div>
               <div class="carousel-item">
-                <img src="../images/trabajos 5.jpg" class="d-block w-100" alt="imagenTrabajos">
+                <img class="carousel__div--imagen" src="../images/trabajos 5.jpg" class="d-block w-100" alt="imagenTrabajos">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -107,11 +109,22 @@
     </main>
 
     <footer>
-        
-        <img class="imgCopyright" src="../images/copyright.jpg" alt="copyright" width="80 " height="40">
 
-        <p class="textoCopyright">Derechos reservados propiedad de Ryzer</p>
+      <div class="copyright">
 
-    </footer>
+          <img class="copyright__img" src="../images/copyright.jpg" alt="copyright" width="80 " height="40">
+          
+          <p class="copyright__texto">Derechos reservados propiedad de Ryzer</p>
+
+      </div>
+          
+      <div class="redes">
+
+          <p class="instagram">Instagram</p>
+          <p class="facebook">Facebook</p>
+          <p class="youtube">YouTube</p>
+          
+      </div>
+  </footer>
 </body>
 </html>

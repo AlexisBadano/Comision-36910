@@ -1,7 +1,7 @@
 .contacto__cuerpo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "formulario mapa";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: ". formulario mapa .";
     justify-items: center;
 
     overflow: hidden;
@@ -9,7 +9,8 @@
     &--formulario{
         display: flex;
         flex-direction: column;
-        border: solid rgb(228, 119, 17);    
+        border: solid rgb(228, 119, 17);
+        border-radius: 15px;   
         padding: 1rem;
         margin: 3rem;
     
@@ -33,8 +34,15 @@
 
 .mapa{
     margin: 3rem;
-    
+    padding: 1rem;
     grid-area: mapa;
+
+    border: solid rgb(228, 119, 17);
+    border-radius: 15px;
+}
+
+.donde__estamos{
+    margin-bottom: 2rem;
 }
 
 button{
@@ -60,19 +68,13 @@ button{
         }
     }
 
-    .donde_estamos{
-        position: absolute;
-    }
 
     .mapa{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         margin: 1rem;
-        width: 100%;
-
-        iframe{
-            width: 50%;
-        }
+       
 
         h2{
             display: flex;
