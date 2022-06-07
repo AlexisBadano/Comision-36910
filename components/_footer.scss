@@ -1,15 +1,47 @@
 footer{
+    min-height: 250px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column-reverse;
+    justify-content: center;
     background-color: black;
-    .redes{
+
+    .map{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+        ul{
+            list-style: none;
+        }
+        
+        a{
+            text-decoration: none;
+            color: $color-primary;
+        }
+
+        &__redes{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .servicios{
+        display: flex;
+        align-items: center;
+
+        ul{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: $color-primary;
+        }
     }
 }
 
 .copyright{
     display: flex;
-    flex-direction: column;
     justify-content: center;
 
     &__texto{
@@ -19,10 +51,18 @@ footer{
 }
 
 @media screen and (max-width: 450px){
-    .redes{
 
-        p{
-        display:none;
+    .map{
+        flex-wrap: wrap;
+
+        ul{
+            display: flex;
+
+            li{
+                padding: 0rem 1rem
+            }
         }
     }
+
+
 }

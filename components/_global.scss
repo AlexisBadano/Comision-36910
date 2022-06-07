@@ -38,9 +38,10 @@ $redes: (instagram: rgb(229, 26, 124),
 @each $name, $color in $redes {
     .#{$name}{
         color: $color;
-        margin: 1rem;
-        padding: 10px;
-        border: solid 1px $color;
+        margin: 1.5rem;
+        // padding: 10px;
+        // border: solid 1px $color;
+        // height: 20%;
     }
     
 }
