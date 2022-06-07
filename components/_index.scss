@@ -17,13 +17,14 @@
         grid-area: subtitulo;
         padding-top: 1rem;
         padding-left: 1rem;
-        /* color: rgb(238, 150, 68) ; */
+        font-weight: 700;
     }
     
     &--descripcion{
         text-align: justify;
         grid-area: texto;
         padding: 1rem 3rem;
+        font-weight: 400;
     }
     
     &--video{
@@ -49,10 +50,104 @@
  @extend .template_titulos;
 }
 
+// Caja de Marcas 
+
+.brands{
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+
+    ul{
+        background-color: #383d3f;
+        display: flex;
+        border-radius: 5px;
+        overflow: hidden;
+
+        padding: 0;
+    
+    }
+
+    &__svg{
+        padding: 1.5rem 4rem;
+        display: inline;
+        border: solid 1px orange;
+
+        path{
+            fill: #6a6a6a;
+        }
+    }
+
+    &__svg:hover {
+
+        .brands__svg--ryzen{
+
+            path{
+               fill: black;
+               transition: all 0.5s ease-out;
+            }
+        }
+        
+        .brands__svg--asus{
+
+            path{
+                fill: #00539b;
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .brands__svg--intel{
+
+            path{
+                fill: #0068b5 ;
+                transition: all 0.5s ease-out;
+
+            }
+        }
+
+        .brands__svg--nvidia{
+            .text{
+                fill:black;
+                transition: all 0.5s ease-out;
+            }
+
+            .icon{
+                fill:#76b900;
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .brands__svg--asrock{
+            path{
+                fill: #79bd28;
+                transition: all 0.5s ease-out;
+            }
+        }
+
+        .brands__svg--bequiet{
+            .be{
+                fill: black;
+                transition: all 0.5s ease-out;
+            }
+
+            .quiet{
+                fill: #ee7f00;
+                transition: all 0.5s ease-out;
+            }
+        }
+    }
+}
+
+
+svg:hover{
+    transform: scale(1.15);
+
+    transition: all 0.5s ease-out;
+}
+
 // Responsive for Tablet
 
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1189px){
     .producto__destacado{
         max-height: 1000px;
         margin: 0.5rem;
@@ -70,6 +165,10 @@
         &--video{
             padding: 0.5rem;
         }
+    }
+
+    .brands{
+        display: none;
     }
 }
 
